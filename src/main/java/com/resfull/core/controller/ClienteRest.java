@@ -5,19 +5,19 @@
  */
 package com.resfull.core.controller;
 
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/nota")
-@ComponentScan()
+@EnableAutoConfiguration
 public class ClienteRest {
 
     @GetMapping("/all")
     public String devolvertodos(){
-        return "template2";
+        return "template";
     }
     
 }
